@@ -1,5 +1,13 @@
+# Программирование на языке высокого уровня (Python).
+# Задание №4.3.4. Вариант 4
+#
+# Выполнил: Панчешный Александр Алексеевич
+# Группа: ПИЖ-б-о-23-1-2
+# E-mail: pancheshny2020@yandex.ru
+
 # Импортирование всех классов
-from time_classes import Time, MilitaryTime, FormattedTime, Stopwatch
+from time_classes import Time, MilitaryTime, FormattedTime
+from stopwatch import Stopwatch
 
 # Создание объектов Time
 time1 = Time(10, 30, 45)

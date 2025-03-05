@@ -217,10 +217,16 @@ class FormattedTime(Time):
             hours = 12
         am_pm = "AM" if self.hours < 12 else "PM"
         return f"{hours:02}:{self.minutes:02}:{self.seconds:02} {am_pm}"  # Возвращает строку в формате "ЧЧ:ММ:СС AM/PM"
+```
 
+- Исходный код stopwatch.py:
+```python
+
+from time_classes import Time
+from typing import Optional
 
 class Stopwatch:
-    # Класс для представления секундомера (композиция).
+    # Класс для представления секундомера.
 
     def __init__(self) -> None:
         # Инициализация секундомера.
