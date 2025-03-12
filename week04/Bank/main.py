@@ -5,7 +5,6 @@
 # Группа: ПИЖ-б-о-23-1-2
 # E-mail: pancheshny2020@yandex.ru
 
-
 from deposit import deposits
 
 if __name__ == "__main__":
