@@ -160,13 +160,13 @@ namespace ArgumentParser
             }
             else
             {
-                throw std::logic_error("Attempt to store string value in flag argument.");
+                throw std::logic_error("Попытка сохранить строковое значение в аргументе флага");
             }
             return *this;
         }
         else
         {
-            throw std::logic_error("No argument to store value for.");
+            throw std::logic_error("Нет агрумента для сохранения значения.");
         }
     }
 
@@ -181,13 +181,13 @@ namespace ArgumentParser
             }
             else
             {
-                throw std::logic_error("Attempt to store bool value in non-flag argument.");
+                throw std::logic_error("Попытка сохранить логическое значение в аргументе, не являющемся флагом.");
             }
             return *this;
         }
         else
         {
-            throw std::logic_error("No argument to store value for.");
+            throw std::logic_error("Нет агрумента для сохранения значения.");
         }
     }
 
@@ -202,13 +202,13 @@ namespace ArgumentParser
             }
             else
             {
-                throw std::logic_error("Attempt to store int values in flag argument.");
+                throw std::logic_error("Попытка сохранить значения типа int в аргументе флага.");
             }
             return *this;
         }
         else
         {
-            throw std::logic_error("No argument to store values for.");
+            throw std::logic_error("Нет агрумента для сохранения значения.");
         }
     }
 
@@ -223,7 +223,7 @@ namespace ArgumentParser
         }
         else
         {
-            throw std::logic_error("No argument to set multi-value for.");
+            throw std::logic_error("Нет аргумента для установки множественного значения.");
         }
     }
 
@@ -238,7 +238,7 @@ namespace ArgumentParser
         }
         else
         {
-            throw std::logic_error("No argument to set as positional.");
+            throw std::logic_error("Нет аргумента для установки в качестве позиционного.");
         }
     }
 
@@ -272,7 +272,7 @@ namespace ArgumentParser
                 return *this;
             }
         }
-        throw std::logic_error("No string argument to set default value for.");
+        throw std::logic_error("Нет строкового аргумента для установки значения по умолчанию.");
     }
 
     std::string ArgParser::GetStringValue(const std::string &arg_name, const std::string &default_value) const
